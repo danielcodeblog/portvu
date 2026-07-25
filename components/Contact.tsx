@@ -8,8 +8,21 @@ export default function Contact() {
   const { register, handleSubmit, reset, formState: { errors, isSubmitting } } = useForm();
 
   const onSubmit = (data: any) => {
-    console.log(data);
-    alert('Thank you for reaching out! Your message has been sent. Jceed will reply shortly.');
+    const subject = encodeURIComponent(`Project Brief: ${data.service} - ${data.name}`);
+    const body = encodeURIComponent(
+      `Hello JCEED,\n\n` +
+      `I would like to request a quote / send a project brief with the following details:\n\n` +
+      `- Name: ${data.name}\n` +
+      `- Email: ${data.email}\n` +
+      `- Service Required: ${data.service}\n` +
+      `- Platform / Channel Link: ${data.channel || 'None provided'}\n\n` +
+      `Project Details & Timeline:\n` +
+      `${data.message}\n\n` +
+      `Best regards,\n` +
+      `${data.name}`
+    );
+
+    window.location.href = `mailto:jceeagency@gmail.com?subject=${subject}&body=${body}`;
     reset();
   };
 
