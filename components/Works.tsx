@@ -14,14 +14,14 @@ const projects = [
   },
   {
     id: 2,
-    title: 'NIGERIA',
+    title: 'PODCAST',
     category: 'FEATURED',
     video: 'https://player.vimeo.com/video/1212580564?autoplay=0&loop=1&badge=0&autopause=0&api=1&muted=1&controls=0',
     poster: 'https://picsum.photos/seed/new-project-2/1920/1080',
   },
   {
     id: 3,
-    title: 'VLOG',
+    title: 'VOIR',
     category: 'FEATURED',
     video: 'https://player.vimeo.com/video/1212580562?autoplay=0&loop=1&badge=0&autopause=0&api=1&muted=1&controls=0',
     poster: 'https://picsum.photos/seed/new-project/1920/1080',
@@ -35,7 +35,7 @@ const projects = [
   },
   {
     id: 5,
-    title: 'DINOVATE',
+    title: 'SPORTS',
     category: 'JUST TALKS',
     video: 'https://player.vimeo.com/video/1212580563?autoplay=0&loop=1&badge=0&autopause=0&api=1&muted=1&controls=0',
     poster: 'https://picsum.photos/seed/p2/800/1000',
