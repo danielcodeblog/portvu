@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-sans);
+  --font-display: var(--font-display);
+  --color-eclipse-midnight: #0F0E47;
+  --color-eclipse-deep: #272757;
+  --color-eclipse-twilight: #505081;
+  --color-eclipse-periwinkle: #8686AC;
+  --color-eclipse-ice: #F2F2F8;
+}
+
+@layer base {
+  body {
+    @apply font-sans;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+/* Custom animations and effects */
+.text-glow {
+  text-shadow: 0 0 20px rgba(134, 134, 172, 0.4);
+}
+
+.bg-noise {
+  background-color: #0F0E47;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E"), radial-gradient(circle at 50% 50%, #272757 0%, #0F0E47 100%);
+  background-attachment: fixed;
+}
+
+.white-3d-bg {
+  background: radial-gradient(circle at 50% 50%, #272757 0%, #0F0E47 100%);
+}
+
+.card-3d {
+  background: #272757;
+  border: 1px solid rgba(134, 134, 172, 0.15);
+  box-shadow: 0 10px 30px rgba(15, 14, 71, 0.4);
+}
+
+.blue-white-mix {
+  background: linear-gradient(135deg, #0F0E47 0%, #272757 50%, #505081 100%);
+  background-attachment: fixed;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Jceededitor | Video Editor & Sound Designer",
+  "description": "Professional video editing and audio post-production for YouTubers, podcasters, and content creators worldwide.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
