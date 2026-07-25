@@ -13,7 +13,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: 'Israel Amedu | Video Editor Portfolio',
+  title: 'JCEED | Video Editor Portfolio',
   description: 'Boutique post-production portfolio showcasing visual narratives, music videos, and commercial work.',
 };
 
